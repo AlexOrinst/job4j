@@ -28,5 +28,17 @@ public class SqMaxTest {
         Assert.assertEquals(exp, res);
     }
 
+    @Test
+    public void max3 () {
+        int n1 = 10;
+        int n2 = 2;
+        int n3 = 30;
+        int n4 = 4;
+        int exp = 30;
+        int res = SqMax.max(n1, n2, n3, n4);
+        Assert.assertEquals(exp, res);
+    }
+
+
 
 }
