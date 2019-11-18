@@ -11,17 +11,25 @@ public class CheckPrimeNumberTest {
 
     @Test
     public void when5 () {
-        ChechPrimeNumber check = new ChechPrimeNumber();
+        CheckPrimeNumber check = new CheckPrimeNumber();
         boolean res = check.isPrime(5);
         assertThat(res, is(true));
     }
 
     @Test
     public void when4 () {
-        ChechPrimeNumber check = new ChechPrimeNumber();
+        CheckPrimeNumber check = new CheckPrimeNumber();
         boolean res = check.isPrime(4);
         assertThat(res, is(false));
     }
+
+    @Test
+    public void when6 () {
+        CheckPrimeNumber check = new CheckPrimeNumber();
+        boolean res = check.isPrime(6);
+        assertThat(res, is(false));
+    }
+
 
 
 }
