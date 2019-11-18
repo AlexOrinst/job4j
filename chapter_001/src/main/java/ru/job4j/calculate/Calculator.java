@@ -1,5 +1,10 @@
-package ru.job4j;
+package ru.job4j.calculate;
 
+/**
+ * Class for calculating basic arithmetic operations
+ *
+ * @author Alex Orinshteyn
+ */
 public class Calculator {
 
     public static void add (int first, int second) {
@@ -22,7 +27,10 @@ public class Calculator {
         System.out.println(first + " - " + second + " = " + sub);
     }
 
-
+    /**
+     * Main method
+     * @param args - args.
+     */
     public static void main(String[] args) {
         add(1, 1);
         multiply(2, 1);
