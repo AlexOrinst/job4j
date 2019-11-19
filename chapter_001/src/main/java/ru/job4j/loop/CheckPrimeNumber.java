@@ -9,9 +9,9 @@ public class CheckPrimeNumber {
                 if (num % i == 0) {
                     isPrime = false;
                     break;
-                } else {
-                    isPrime = true;
                 }
+                isPrime = true;
+
             }
         }
         return isPrime;
