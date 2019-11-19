@@ -15,6 +15,12 @@ public class CheckPrimeNumberTest {
         boolean res = check.isPrime(5);
         assertThat(res, is(true));
     }
+    @Test
+    public void when3 () {
+        CheckPrimeNumber check = new CheckPrimeNumber();
+        boolean res = check.isPrime(3);
+        assertThat(res, is(true));
+    }
 
     @Test
     public void when4 () {
