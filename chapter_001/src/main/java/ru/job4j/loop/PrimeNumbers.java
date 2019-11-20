@@ -12,6 +12,7 @@ public class PrimeNumbers {
                         isPrime = false;
                         break;
                     }
+                    isPrime = true;
                 }
                 if (isPrime) {
                     count++;
