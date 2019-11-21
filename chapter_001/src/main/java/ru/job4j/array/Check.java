@@ -3,17 +3,13 @@ package ru.job4j.array;
 public class Check {
 
     public boolean mono(boolean[] arr) {
-        int count1 = 0;
-        int count2 = 0;
-
+        boolean rsl = true;
         for (int i = 0; i < arr.length; i++) {
-            if (arr[i]) {
-                count1++;
-            } else if (!arr[i]) {
-                count2++;
+            if (arr[i] != arr[0]) {
+                rsl = false;
+                break;
             }
         }
-        return count1 == arr.length || count2 == arr.length;
+        return rsl;
     }
-
 }
